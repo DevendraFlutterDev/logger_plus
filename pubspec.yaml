@@ -1,7 +1,7 @@
 name: logger_plus
 description: This package is for logging.
 version: 0.0.1
-homepage:
+homepage: https://github.com/DevendraFlutterDev/logger_plus
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
