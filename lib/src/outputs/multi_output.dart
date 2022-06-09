@@ -24,16 +24,22 @@ class MultiOutput extends LogOutput {
 
   @override
   void init() {
-    _outputs.forEach((o) => o.init());
+    for (var o in _outputs) {
+      o.init();
+    }
   }
 
   @override
   void output(OutputEvent event) {
-    _outputs.forEach((o) => o.output(event));
+    for (var o in _outputs) {
+      o.output(event);
+    }
   }
 
   @override
   void destroy() {
-    _outputs.forEach((o) => o.destroy());
+    for (var o in _outputs) {
+      o.destroy();
+    }
   }
 }

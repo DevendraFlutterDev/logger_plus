@@ -90,7 +90,8 @@ class _LogConsoleState extends State<LogConsole> {
     });*/
     _scrollController.addListener(() {
       if (!_scrollListenerEnabled) return;
-      var scrolledToBottom = _scrollController.offset >= _scrollController.position.maxScrollExtent;
+      var scrolledToBottom = _scrollController.offset >=
+          _scrollController.position.maxScrollExtent;
       setState(() {
         _followBottom = scrolledToBottom;
       });
@@ -339,7 +340,8 @@ class LogBar extends StatelessWidget {
   final bool dark;
   final Widget child;
 
-  const LogBar({Key? key, required this.dark, required this.child}) : super(key: key);
+  const LogBar({Key? key, required this.dark, required this.child})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

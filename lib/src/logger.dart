@@ -53,7 +53,8 @@ class Logger {
   final LogPrinter _printer;
   final LogOutput _output;
   bool _active = true;
-  static final StreamController<OutputEvent> _streamController = StreamController<OutputEvent>.broadcast(sync: true);
+  static final StreamController<OutputEvent> _streamController =
+      StreamController<OutputEvent>.broadcast(sync: true);
 
   /// Create a new instance of Logger.
   ///
@@ -109,7 +110,8 @@ class Logger {
   }
 
   /// Log a message with [level].
-  void log(Level level, dynamic message, [dynamic error, StackTrace? stackTrace]) {
+  void log(Level level, dynamic message,
+      [dynamic error, StackTrace? stackTrace]) {
     if (!_active) {
       throw ArgumentError('Logger has already been closed.');
     } else if (error != null && error is StackTrace) {
