@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
+import 'package:logger_plus/logger_plus.dart';
 import 'package:logger_plus/src/filters/development_filter.dart';
 import 'package:logger_plus/src/log_filter.dart';
 import 'package:logger_plus/src/log_output.dart';
@@ -66,7 +67,7 @@ class Logger {
     LogPrinter? printer,
     LogOutput? output,
     Level? level,
-  })  : _filter = filter ?? DevelopmentFilter(),
+  })  : _filter = filter ?? ProductionFilter(),
         _printer = printer ?? PrettyPrinter(),
         _output = output ?? ConsoleOutput() {
     _filter.init();
