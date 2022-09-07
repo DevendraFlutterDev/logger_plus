@@ -131,10 +131,8 @@ class Logger {
         try {
           _output.output(outputEvent);
         } catch (e, s) {
-          if (kDebugMode) {
             print(e);
             print(s);
-          }
         }
       }
     }
