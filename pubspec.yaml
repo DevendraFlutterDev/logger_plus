@@ -1,6 +1,6 @@
 name: logger_plus
 description: This package is for logging. Using this package you can see the console message on the phone screen by shaking your phone.
-version: 0.0.5+3
+version: 0.0.6+4
 homepage: https://github.com/DevendraFlutterDev/logger_plus
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sensors_plus: ^2.0.0
+  sensors_plus: ^2.0.1
 
 dev_dependencies:
   flutter_test:
