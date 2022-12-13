@@ -39,6 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
     logger.e(_counter);
     logger.wtf("WTF");
+    logger.d("Debug");
   }
 
   @override
